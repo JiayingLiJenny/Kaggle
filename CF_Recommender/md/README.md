@@ -2,6 +2,7 @@
 # Item_based Collaborative Filtering Recommender
 ## (基于物品的协同过滤推荐系统)
 #### ----Music Recommender (data from Youtube)
+#### （此方法可用于多种推荐系统，如：广告推荐系统，电影推荐系统等。）
 
 
 ```python
