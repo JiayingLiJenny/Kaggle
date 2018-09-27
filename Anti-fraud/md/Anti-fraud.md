@@ -17,7 +17,7 @@
 ### 目标确定
 
 构建信用卡反欺诈预测模型，提前发现客户信用卡被盗刷的事件。
-————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————
 
 
 ```python
@@ -37,8 +37,8 @@ from sklearn.metrics import make_scorer, fbeta_score, recall_score, precision_sc
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 ```
-
-### 数据加载观察
+## 二 数据探索
+### 0 数据加载观察
 
 
 ```python
@@ -655,8 +655,6 @@ data.isnull().sum()
     dtype: int64
 
 
-
-## 二 数据探索（特征工程）
 
 ### 1 信用卡消费时间的频次
 
