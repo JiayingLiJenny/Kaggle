@@ -38,7 +38,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 ```
 
-### 数据加载
+### 数据加载观察
 
 
 ```python
