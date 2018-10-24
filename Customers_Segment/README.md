@@ -1,10 +1,10 @@
 
 # CUSTOMERS SEGMENT
-## Machine Learning
-## Unsupervised Learning
+## Machine Learning（Unsupervised Learning）
+
 
 ## Project Overview
-In this project I will apply unsupervised learning techniques on product spending data collected for customers of a wholesale distributor in Lisbon, Portugal to identify customer segments hidden in the data. You will first explore the data by selecting a small subset to sample and determine if any product categories highly correlate with one another. Afterwards, I will preprocess the data by scaling each product category and then identifying (and removing) unwanted outliers. With the good, clean customer spending data, I will apply PCA transformations to the data and implement clustering algorithms to segment the transformed customer data. Finally, comparing the segmentation found and considering ways this information could assist the wholesale distributor with future service changes.
+In this project I will apply unsupervised learning techniques on product spending data collected for customers of a wholesale distributor in Lisbon, Portugal to identify customer segments hidden in the data. I will first explore the data by selecting a small subset to sample and determine if any product categories highly correlate with one another. Afterwards, I will preprocess the data by scaling each product category and then identifying and removing unwanted outliers. With the good, clean customer spending data, I will apply PCA transformations to the data and implement clustering algorithms to segment the transformed customer data. Finally, comparing the segmentation found and considering ways this information could assist the wholesale distributor with future service changes.
 
 ## Project Highlights
 This project is designed with unsupervised learning and work towards developing conclusions for a potential client on a real-world dataset. 
@@ -17,10 +17,6 @@ Things learned by completing this project:
 - How to analyze PCA dimensions and construct a new feature space.
 - How to optimally cluster a set of data to find hidden patterns in a dataset.
 - How to assess information given by cluster data and use it in a meaningful way.
-
-
-## Description
-A wholesale distributor recently tested a change to their delivery method for some customers, by moving from a morning delivery service five days a week to a cheaper evening delivery service three days a week. Initial testing did not discover any significant unsatisfactory results, so they implemented the cheaper option for all customers. Almost immediately, the distributor began getting complaints about the delivery service change and customers were canceling deliveries, losing the distributor more money than what was being saved. You've been hired by the wholesale distributor to find what types of customers they have to help them make better, more informed business decisions in the future. Your task is to use unsupervised learning techniques to see if any similarities exist between customers, and how to best segment customers into distinct categories.
 
 
 ## Software and Libraries
@@ -55,9 +51,6 @@ Python 3.x installer.
 - 如何分析 PCA 维度并构建新的特征空间。
 - 如何对一组数据进行最佳聚类操作，找到数据集中的隐藏规律。
 - 如何评估聚类数据提供的信息并有效利用该信息。
-
-## 说明
-某个批发商最近针对某些客户进行了送货方式试点更改，从一周五天上午送货服务变成了成本更低的一周三天晚上送货服务。初始测试并没有发现任何明显不理想的结果，因此他们针对所有客户都采取了成本更低的送货方式。但是很快，批发商就收到客户关于送货服务变化的投诉，有客户取消了送货服务，导致批发商损失的金额比节省的更高。批发商聘请你来帮助他们了解他们的客户类型，以便日后做出更好、更明智的商业决策。任务是使用非监督式学习技巧判断客户之间是否有相似之处，以及如何以最佳方式将客户细分成明显的类别。
 
 ## 软件和库
 此项目使用以下软件和 Python 库：
