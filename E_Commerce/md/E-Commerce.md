@@ -2302,7 +2302,7 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 可见一整年的销售呈上升趋势，其中有小幅度波动，11月份达到最大值，12月份又有回落的趋势，由于这是一家主营礼品的电商，而主要销售地区为英国和其他欧洲地区，因此导致这种情况的原因与圣诞节有脱不开的关系。
 
-<img src="Month_TotalPriceQuantity.png" width="700"  align=left />
+<img src="Month_TotalPriceQuantity.png" width="850"  align=left />
 
 
 ### 2. 哪些国家的销量最高
