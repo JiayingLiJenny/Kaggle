@@ -2395,9 +2395,21 @@ Canceled_Transaction则展示了不同类别交易的订单取消情况，CRUK�
 
 ## 四. 客户价值分析
 
-为了能更好的精准化营销。使用RFM模型对客户的价值进行分析。
 
-构造一个关于每个客户的Recency，Frequancy，Monetary的DataFrame，再对
+在企业的客户关系管理中，对客户分类，区分不同价值的客户。针对不同价值的客户提供个性化的服务方案，采用不同的营销策略，将有限资源集中于高价值客户，实现企业理论最大化目标。
+因此使用RFM模型对客户的价值进行分析。
+
+RFM is a method used for analyzing customer value.
+
+RFM stands for the three dimensions:
+1. Recency – How recently did the customer purchase?
+2. Frequency – How often do they purchase?
+3. Monetary Value – How much do they spend?
+
+
+步骤：
+
+构造一个关于每个客户的Recency，Frequancy，Monetary的DataFrame，再对它们分别进行分类，以数字代表不同类别（比如1为高，0为低），再按顺序组合Recency，Frequancy，Monetary的类别构造RFM类别，RFM类别相同的则代表同一类客户。
 
 
 ```python
@@ -2771,7 +2783,7 @@ df_RFM.describe()
 
 
 ```python
-# 给Frequency	Monetary	Recency进行分类，1代表高，0代表低
+# 给Frequency、Monetary、Recency进行分类，1代表高，0代表低
 df_RFM['RClass']=df_RFM['Recency'].map(lambda x:1 if x<df_RFM['Recency'].median() else 0)
 df_RFM['FClass']=df_RFM['Frequency'].map(lambda x:1 if x>df_RFM['Frequency'].median() else 0)
 df_RFM['MClass']=df_RFM['Monetary'].map(lambda x:1 if x>df_RFM['Monetary'].median() else 0)
