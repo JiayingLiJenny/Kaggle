@@ -2302,7 +2302,7 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 可见一整年的销售呈上升趋势，其中有小幅度波动，11月份达到最大值，12月份又有回落的趋势，由于这是一家主营礼品的电商，而主要销售地区为英国和其他欧洲地区，因此导致这种情况的原因与圣诞节有脱不开的关系。
 
-<img src="Month_TotalPriceQuantity.png" width="850"  align=left />
+<img src="Month_TotalPriceQuantity.png" width="900"  align=left />
 
 
 ### 2. 哪些国家的销量最高
@@ -2317,9 +2317,9 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 第一幅图展现了在各国平均销量情况，颜色越深的越多。二、三幅图则具体展现了各国平均销售数量以及销售额。从图中可观察到Netherlands，Sweden，Japan，Australia是平均销售数量最多的国家，而Netherlands，Australia，Japan，Sweden则是平均销售额最高的国家。
 
-<img src="country_PriceQuantity.png" width="700"  align=left />
-<img src="Country_AvgQuantity.png" width="700"  align=left />
-<img src="Country_AvgPrice.png" width="700"  align=left />
+<img src="country_PriceQuantity.png" width="900"  align=left />
+<img src="Country_AvgQuantity.png" width="900"  align=left />
+<img src="Country_AvgPrice.png" width="900"  align=left />
 
 ### 4. 不同国家在这一年的销售趋势如何
 下面两幅图均表示各国一整年的销售趋势，不同颜色的曲线代表不同国家，区别在于，上图包含了United Kingdom，而下图去除了United Kingdom。
