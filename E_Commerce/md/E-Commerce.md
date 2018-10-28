@@ -2302,13 +2302,12 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 可见一整年的销售呈上升趋势，其中有小幅度波动，11月份达到最大值，12月份又有回落的趋势，由于这是一家主营礼品的电商，而主要销售地区为英国和其他欧洲地区，因此导致这种情况的原因与圣诞节有脱不开的关系。
 
-<img src="Month_TotalPriceQuantity.png" width="900"  align=left />
-
+![png](3.1.png)
 
 ### 2. 哪些国家的销量最高
 下图表示了销量最高的3个国家，分别是United Kingdom，EIRE，和France，其中United Kingdom的销量是最大的，而且是其他地区好几倍甚至几十倍。
 
-<img src="Top3countries_totalPrice&Quantity.png" width="400"  align=left />
+![png](3.2.png)
 
 
 ### 3. 哪些国家的平均销售数量最高 & 平均销售额最高
@@ -2317,17 +2316,17 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 第一幅图展现了在各国平均销量情况，颜色越深的越多。二、三幅图则具体展现了各国平均销售数量以及销售额。从图中可观察到Netherlands，Sweden，Japan，Australia是平均销售数量最多的国家，而Netherlands，Australia，Japan，Sweden则是平均销售额最高的国家。
 
-<img src="country_PriceQuantity.png" width="900"  align=left />
-<img src="Country_AvgQuantity.png" width="900"  align=left />
-<img src="Country_AvgPrice.png" width="900"  align=left />
+![png](3.3.png)
+![png](3.4.png)
+![png](3.5.png)
 
 ### 4. 不同国家在这一年的销售趋势如何
 下面两幅图均表示各国一整年的销售趋势，不同颜色的曲线代表不同国家，区别在于，上图包含了United Kingdom，而下图去除了United Kingdom。
 
 可见，由于英国的销量占了绝大部分，因此整年的销售情况均受英国地区的影响，其他国家影响甚微。同时，并非所有的国家在这一整年中销量都呈现上升趋势，大部分国家都具有一定波动性。因此，以英国作为主场，销售趋势因不同国家而异。
 
-<img src="Month_Countries-01.png" width="700"  align=left />
-<img src="Month_Countries-02.png" width="700"  align=left />
+![png](3.6.png)
+![png](3.7.png)
 
 ### 5. 单价在哪个区间的商品销量最高
 左图表示了不同价格区间的商品总销售数量。
@@ -2340,8 +2339,8 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 从总体趋势来说，无论什么价格区间的商品，一年的销量总体趋势大致相同。除了6月份的时候，低价商品仍处于上涨趋势，而中偏高以及高价商品呈现下降趋势。因此这段时间可以对中偏高以及高价商品采取相关的营销策略。
 
-<img src="Product_UnitPrice_scale.png" width="350"  align=left />
-<img src="Month_uPrice.png" width="600" hegiht="313" align=left />
+![png](3.8.png)
+
 
 ### 7. 不同交易类型的销售情况如何
 
@@ -2359,8 +2358,7 @@ df.to_csv('cleaned_data.csv', encoding="ISO-8859-1", index=False)
 
 右图是特殊交易类型的交易额，Manual、Discount、CRUK Commission类型的交易都出现了亏损情况。
 
-<img src="Normal_Transaction.png" width="400"  align=left />
-<img src="SpecialTransaction_TotalPrice.png" width="400"  align=left />
+![png](3.9.png)
 
 ### 8. 订单取消率是多少
 
@@ -2369,10 +2367,8 @@ Canceled(include normal)展现了所有订单的取消情况，订单总取消�
 Canceled（not include normal）展现了特殊交易类型的订单取消情况，订单取消率占19.11%，通过比较发现，它比总取消率高出了近17个百分点，可见特殊交易类型的订单是导致整体取消率上升的重要原因。那么是哪一类的交易取消率最高呢？
 
 Canceled_Transaction则展示了不同类别交易的订单取消情况，CRUK、D、M是取消率最高的三种交易类型，结合上面得出的交易亏损情况，可见取消率是影响亏损的重要原因。到此还可以引申出更多的问题，比如为什么Discount的订单全为取消的订单，由于此份数据的相关资料不足，不能一一确定。
-
-<img src="Canceled(include normal) .png" width="410"   align=center />
-<img src="Canceled(not include normal).png" width="400"  align=left />
-<img src="Canceled_Transaction.png" width="500"  align=center />
+![png](3.10.png)
+![png](3.11.png)
 
 ### 9. 不同月份的订单取消情况如何
 
@@ -2380,17 +2376,14 @@ Canceled_Transaction则展示了不同类别交易的订单取消情况，CRUK�
 
 但去除正常交易的订单后，从右图则可以观察到订单取消总数与总交易情况呈现出相似的趋势。
 
-
-<img src="Month_Canceled.png" width="400"  align=left />
-<img src="Month_Canceled(only canceled).png" width="410"  align=center />
+![png](3.12.png)
 
 ### 10. 哪些商品销量最高
 左图筛选了销售额前10的商品，可见包含DESIGN,HOLDER,RETROSPOT,BOX,SIGN这些词的商品销量最高。由于这里的商品只是取了描述中的最后一个词，在统计的时候难免会与真实情况存在一定误差，于是再结合之前构造的词云图进行分析。
 
 右图则为之前构造的词云图，从图中可以观察到LUNCH BAG,JUMBO BAG,RED RETROSPORT,METAL SIGN,LIGHT HOLDER,WATER BOTTLE等这些词是出现频率最高的词。因此在销量高的商品中，HOLDER指的是LIGHT HOLDER，RETROSPOT指的是RED RETROSPORT,SIGN指的是METAL SIGN，DESIGN指的是PANTRY DESIGN。
 
-<img src="Top10Products_TotalPrice.png" width="250"  align=left />
-<img src="wordCloud.png" width="650"  align=center />
+![png](3.13.png)
 
 ### 总结：
 1. 销售情况整体呈上升趋势，其中受时间（节假日等因素），地区（国家），不同单价区间的商品，不同类型的交易，订单取消率，以及不同种类的商品影响。
